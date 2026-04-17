@@ -243,31 +243,10 @@ git push heroku main
 
 ---
 
-## Hackathon Tips ⚡
-
-1. **Fast Iteration:** Use the REST endpoint (`/api/query`) to test without Vapi
-2. **Demo Data:** Populate Qdrant with your project's docs/code for impressive demos
-3. **Prompt Engineering:** Customize system prompts in `processor.service.ts` for different use cases
-4. **Voice Quality:** Test different Vapi voices to find the best one
-5. **Fallbacks:** Add error handling for API failures (timeouts, rate limits)
-
----
-
-## Next Steps
-
-- [ ] Set up Vapi webhook in Vapi dashboard
-- [ ] Add more sample documents to Qdrant
-- [ ] Customize system prompts for your use case
-- [ ] Test end-to-end voice interaction
-- [ ] Deploy backend
-- [ ] Record demo video
-
----
-
 ## Support
 
 - **Vapi Docs:** https://docs.vapi.ai
 - **Qdrant Docs:** https://qdrant.tech/documentation
 - **OpenAI Docs:** https://platform.openai.com/docs
 
-Good luck at HackBLR! 🚀
+                                                                     Built with 💖 by Shivam
