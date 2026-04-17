@@ -247,6 +247,6 @@ git push heroku main
 
 - **Vapi Docs:** https://docs.vapi.ai
 - **Qdrant Docs:** https://qdrant.tech/documentation
-- **OpenAI Docs:** https://platform.openai.com/docs
+- **Grok Docs:** https://docs.x.ai/
 
                                                       Built with 💖 by Shivam
