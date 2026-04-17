@@ -15,21 +15,23 @@ export const sendVapiResponse = async (
   message: string
 ): Promise<void> => {
   try {
-    // This would be called to send a message back to the Vapi call
-    // In webhook mode, responses are typically queued for the agent
-    console.log(`[Vapi Response] Call: ${callId}, Message: ${message.substring(0, 100)}...`);
+    console.log(`[Vapi Response] Sending to call ${callId}: ${message.substring(0, 100)}...`);
 
-    // Example: Send to Vapi's message endpoint
-    // await axios.post(`${VAPI_BASE_URL}/call/${callId}/message`, {
-    //   message: message,
-    // }, {
-    //   headers: {
-    //     'Authorization': `Bearer ${config.VAPI_API_KEY}`,
-    //   }
-    // });
+    await axios.post(
+      `${VAPI_BASE_URL}/call/${callId}/message`,
+      { message: message },
+      {
+        headers: {
+          'Authorization': `Bearer ${config.VAPI_API_KEY}`,
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+    
+    console.log(`✅ Response sent successfully to Vapi`);
   } catch (error) {
     console.error('Failed to send Vapi response:', error);
-    throw error;
+    // Don't throw - allow webhook to complete even if response send fails
   }
 };
 
