@@ -249,4 +249,4 @@ git push heroku main
 - **Qdrant Docs:** https://qdrant.tech/documentation
 - **OpenAI Docs:** https://platform.openai.com/docs
 
-                                                                     Built with 💖 by Shivam
+                                                      Built with 💖 by Shivam
