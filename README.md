@@ -29,7 +29,7 @@ cp .env.example .env
 docker run -p 6333:6333 qdrant/qdrant:latest
 ```
 
-**Option B: Local (Download from https://qdrant.tech/download/)**
+**Option B: Cloud (Run using cloud https://cloud.qdrant.io)**
 ```bash
 ./qdrant
 ```
