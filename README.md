@@ -1,6 +1,6 @@
 # 🎤 Lexia - The Voice-Native Developer Experience Agent
 
-A hackathon-ready voice-first agent that helps developers understand code, debug errors, and navigate APIs—all through natural conversation.
+A ready voice-first agent that helps developers understand code, debug errors, and navigate APIs—all through natural conversation.
 
 **Tech Stack:** Vapi (voice) + Qdrant (vector search) + OpenAI + Express + TypeScript
 
